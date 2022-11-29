@@ -14,43 +14,55 @@
     <div class="col-12 col-xl-2">
       <div class="card h-100">
         <div class="card-header pb-0 p-3">
-          <h6 class="mb-0">Platform Settings</h6>
+          {% comment %} <h6 class="mb-0">Platform Settings</h6> {% endcomment %}
         </div>
         <div class="card-body p-3">
-          <h6 class="text-uppercase text-body text-xs font-weight-bolder">Account</h6>
+          {% comment %} <h6 class="text-uppercase text-body text-xs font-weight-bolder">Account</h6>
           <p class="text-sm">
             <a href="#">paragraf</a>
-          </p>
+          </p> {% endcomment %}
                   
           {% comment %} ---------------Menu----------------------------- {% endcomment %}
           
           <ul class="navbar-nav">
             
-            {% comment %} -----------Dashboard---------------- {% endcomment %}
+            {% comment %} -----------Catalog Volume Monitoring---------------- {% endcomment %}
             <li class="nav-item " >
               <a class="nav-link {% if '#' in segment %} active {% endif %} text-sm" href="/index.html">
-                <span class="nav-link-text ms-0">Menu 1 ►</span>
+                <span class="nav-link-text ms-0">Catalog Volume Monitoring ►</span>
 
               </a>
             </li>
-            {% comment %} -----------Dashboard---------------- {% endcomment %}
+            {% comment %} -----------Data Quality Insights---------------- {% endcomment %}
             <li class="nav-item">
               <a class="nav-link {% if '#' in segment %} active {% endif %} text-sm" href="/index.html">
-                <span class="nav-link-text ms-4">Menu 2 ►</span>
+                <span class="nav-link-text ms-0">Data Quality Insights ►</span>
               </a>
             </li>
-            {% comment %} -----------Dashboard---------------- {% endcomment %}
+            {% comment %} -----------Proposals---------------- {% endcomment %}
             <li class="nav-item">
               <a class="nav-link {% if '#' in segment %} active {% endif %} text-sm" href="/index.html">
-                <span class="nav-link-text ms-1">Menu 3  ►</span>
+                <span class="nav-link-text ms-0">Proposals ►</span>
               </a>
             </li>
+            {% comment %} -----------Connection Dashboard---------------- {% endcomment %}
+            <li class="nav-item">
+                <a class="nav-link {% if '#' in segment %} active {% endif %} text-sm" href="/index.html">
+                  <span class="nav-link-text ms-0">Connection Dashboard ►</span>
+                </a>
+            </li>
+            {% comment %} -----------Process Tracker---------------- {% endcomment %}
+            <li class="nav-item">
+                <a class="nav-link {% if '#' in segment %} active {% endif %} text-sm" href="/index.html">
+                  <span class="nav-link-text ms-0">Process Tracker ►</span>
+                </a>
+              </li>
             
             <hr class="bg-danger border-1 border-top border-dark">
     
             <li>
               <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                  <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Collapse ▼</span> </a>
+                  <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline text-sm">Filter ▼</span> </a>
               <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                   <li class="w-100">
                       <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
